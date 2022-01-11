@@ -13,4 +13,4 @@ jobs:
          - name: build with maven
            run: mvn -B package --file pom.xml
          - name: tomcat deploy
-           run: curl -V -U vinay:vinay -T  /home/runner/work/spring3-mvc-maven-xml-hello-world/spring3-mvc-maven-xml-hello-world/target/spring3-mvc-maven-xml-hello-world-1.0-SNAPSHOT.war 'http:ec2-65-2-148-112.ap-south-1.compute.amazonaws.com:8181/'/manager/text/deploy?path=/github_action_spring
+           run: curl -V -U vinay:vinay -T  /home/runner/work/spring3-mvc-maven-xml-hello-world/spring3-mvc-maven-xml-hello-world/target/spring3-mvc-maven-xml-hello-world-1.0-SNAPSHOT.war 'http:ec2-65-2-148-112.ap-south-1.compute.amazonaws.com:8181/'/manager/text/deploy?path=/github_spring
